@@ -12,11 +12,13 @@ const PokeSelector = (props) => {
       }
 
     return(
-
+        <div className="custom-select">
+            <h2>Choose A Pokémon To See More Detail</h2>
         <select name="poke-selector" id="poke-selector" onChange={handleChange}>
-        <option defaultValue="Choose a poke...">Choose a poke...</option>
-        {options}
-      </select>
+            <option defaultValue="Choose a poke...">Choose a Pokémon</option>
+            {options}
+        </select>
+      </div>
     )
 }
 

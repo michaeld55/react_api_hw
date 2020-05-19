@@ -33,8 +33,13 @@ class PokeContainer extends React.Component {
     render(){
         return(
             <div className="poke-container">
-            <PokeSelector pokemons = {this.state.pokemons} onPokeSelected = {this.handlePokeSelected}/>
-            <PokeDetail pokemon = {this.state.pokemon}/>
+                <PokeSelector pokemons = {this.state.pokemons} onPokeSelected = {this.handlePokeSelected}/>
+                <PokeDetail pokemon = {this.state.pokemon}/>
+                <h3>Built With Infomation from
+                    <a href="https://pokeapi.co/">
+                        <img className="image" src ="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"/>
+                    </a>
+                </h3>
             </div>
         )
     }
